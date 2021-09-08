@@ -1,13 +1,134 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
-		<meta charset="utf-8"> 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rush Chapter8-9HandsOnExercise</title>
+		<meta charset="utf-8">
 		<style>
-		
-		</style>
-	</head> 
-<body> 
+		table {margin: auto;
+					border: 8px solid #000;
+					background-color: #74BF74;
+		}
+		form{
+			display: flex;
+			 align-items: left;
+}
+		td, th {padding: 0.5em;
+						border: .5px solid #000;
+		}
+	caption {font-size: 1.2em;}
 
-</body> 
-</html> 
+	#wrapper {display: flex;
+						flex-direction: row;}
+						#personal{flex: 2;}
+						#favGenre{flex: 3;}
+						#lfavGenre{flex: 2;}
+						#favArtist{flex: 3;}
+
+		input[type="radio"], input[type="checkbox"] {display: inline;}
+		</style>
+	</head>
+<body>
+	<h1>CH 8&9 Practice</h1>
+<table>
+	<caption>What is my favorite movie?</caption>
+	<thread>
+		<tbody>
+	<tr>
+		<td>Title of movie</td>
+		<td>How To Train Your Dragon</td>
+	</tr>
+	<tr>
+		<td>Director</td>
+		<td>Chris Sanders and Dean DeBlois</td>
+	</tr>
+	<tr>
+		<td>Producer</td>
+		<td>Bonnie Arnold</td>
+	</tr>
+	<tr>
+		<td>Leading Actor</td>
+		<td>Jay Baruchel</td>
+	</tr>
+	<tr>
+		<td>Leading Actress</td>
+		<td>America Ferrera</td>
+	</tr>
+	<tr>
+		<td>Rating</td>
+		<td>PG</td>
+	</tr>
+	<tr>
+		<td>A brief description of the movie</td>
+		<td>A young viking who wants to hunt dragons to impress his father, the chief of their village, befriends a rare dragon and learns there might be more to them than he originally thought.</td>
+	</tr>
+	<tr>
+		<td>An absolute link to a review about the movie</td>
+		<td>https://www.imdb.com/title/tt0892769/reviews</td>
+	</tr>
+</tbody>
+</thread>
+</table><br>
+
+<h1>Music Survey</h1>
+<p>Required fields marked with an asterisk *</p><br>
+<form method="post">
+	<div id="wrapper">
+		<fieldset id="personal"><legend>Personal Information</legend>
+			<lable for="myName">*Name:</label>
+				<input type="text" name="myName" id="myName" required="required" placeholder="your first and last name"><br><br>
+			<label for="myEmail">*Email:</label>
+				<input type="text"  name="myEmail" id="myEmail" required="required" placeholder="your@domain.com">
+		</fieldset>
+	</div>
+</form><br>
+
+	<form method="post">
+		<div id="wrapper">
+			<fieldset id="favGenre"><legend>*Favorite genre</legend>
+					<input type="radio" name="favGenre" id="favpop" value="favpop">Pop<br>
+					<input type="radio" name="favGenre" id="favrap" value="favrap">Rap<br>
+					<input type="radio" name="favGenre" id="favrock" value="favrock">Rock<br>
+					<input type="radio" name="favGenre" id="favcountry" value="favcountry">Country<br>
+					<input type="radio" name="favGenre" id="favother" value="favother">Other<br>
+			</fieldset>
+
+				<fieldset id="lfavGenre"><legend>*Least favorite genre</legend>
+						<input type="checkbox" name="favGenre" id="favpop" value="favPop">Pop<br>
+						<input type="checkbox" name="favGenre" id="favrap" value="yes">Rap<br>
+						<input type="checkbox" name="favGenre" id="favrock" value="yes">Rock<br>
+						<input type="checkbox" name="favGenre" id="favcountry" value="yes">Country<br>
+						<input type="checkbox" name="favGenre" id="favother" value="yes">Other<br>
+					</fieldset>
+
+					<fieldset id="favArtist"><legend>*Favorite artist</legend>
+						<select name="Musicians" id="Musicians" size="3">
+							<option value="harry">Harry Styles</option>
+							<option value="Kanye">Kanye West</option>
+							<option value="Panic!">Panic! at the Disco</option>
+							<option value="luke">Luke Bryan</option>
+						</select>
+					</fieldset>
+				</div>
+			</form>
+					<br><br>
+
+					Comments:<br><br>
+					<textarea name="comments" id="comments" cols="60" rows="3">Enter your comments here</textarea><br><br>
+
+						<input type="reset"><br><br>
+
+						<input type="submit"><br><br>
+	<style>
+	@media screen and (max-width: 600px) {
+	  .column {
+	    width: 100%;
+	  }
+	}
+
+</style>
+<footer>
+  <p>Abigayle Rush</p>
+  <p><a href="mailto:ARush@gmail.com">ARush@gmail.com</a></p>
+</footer>
+</body>
+</html>
